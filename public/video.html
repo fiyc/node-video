@@ -41,10 +41,11 @@
 
         let media = '无效的视频ID';
         if (id) {
-            media = `<video class="video" src="/api/video/source?id=${id}" controls="controls" autoplay="autoplay" muted></video>`;
+            media = `<video class="video" src="/api/video/source?id=${id}" controls="controls" autoplay="autoplay"></video>`;
         }
 
         document.getElementById('video-div').innerHTML = media;
+
     </script>
 </body>
 
