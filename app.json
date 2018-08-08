@@ -1,0 +1,17 @@
+{
+        "appName": "",
+        "appAuthor": "fiyc",
+        "appId": "",
+        "appSecret": "",
+        "appDescription": "",
+        "appEntryFile": "./bin/www",
+        "appErrorLog": "",
+        "appOutputLog": "",
+        "appThriftHost": "127.0.0.1",
+        "appThriftPort": 3001,
+        "appCategory": 1,
+        "autoStart": false,
+        "appEnable": true,
+        "appEntryUrl": "",
+        "appLogoUrl": ""
+}

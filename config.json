@@ -1,0 +1,61 @@
+{
+    "name": "fiyc-video",
+    "tables": [
+        {
+            "tableName": "video_source",
+            "tableAlias": "videoSource",
+            "comment": "视频信息",
+            "columns": [
+                {
+                    "columnName": "id",
+                    "columnType": "BIGINT",
+                    "isPrimary": true,
+                    "columnComment": "主键",
+                    "defaultValue" : "0"
+                },
+                {
+                    "columnName": "name",
+                    "columnType": "TEXT",
+                    "isPrimary": false,
+                    "columnComment": "视频名",
+                    "defaultValue" : "null"
+                },
+                {
+                    "columnName": "path",
+                    "columnType": "TEXT",
+                    "isPrimary": false,
+                    "columnComment": "视频路径",
+                    "defaultValue" : "null" 
+                }
+            ]
+        },
+        {
+            "tableName": "video_type",
+            "tableAlias": "videoType",
+            "comment": "视频类型",
+            "columns": [
+                {
+                    "columnName": "id",
+                    "columnType": "BIGINT",
+                    "isPrimary": true,
+                    "columnComment": "主键",
+                    "defaultValue" : "0"
+                },
+                {
+                    "columnName": "name",
+                    "columnType": "TEXT",
+                    "isPrimary": false,
+                    "columnComment": "类型名",
+                    "defaultValue" : "null"
+                },
+                {
+                    "columnName": "valId",
+                    "columnType": "BIGINT",
+                    "isPrimary": false,
+                    "columnComment": "变量ID",
+                    "defaultValue" : 0
+                }
+            ]
+        }
+    ]
+}

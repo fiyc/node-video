@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="./jquery-1.10.2.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <ul id='mediaList'>
+
+            </ul>
+        </div>
+        <script>
+            $.ajax({
+                url: '/api/videoSource/find',
+                type: "GET",
+                success: function(data){
+                    $("#mediaList").html("");
+                    if(data.success && data.data && data.data.list){
+                        for(let i in data.data.list){
+                            let item = data.data.list[i];
+                            let itemLi = `<li><a href="/video.html?id=${item.id}">${item.name}</a></li>`;
+                            $("#mediaList").append(itemLi);
+                        }
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
